@@ -10,7 +10,7 @@ Prova 1:
         + Interrupções;
         + Configuração de clock.
 
-==================================================================================================================================
+==============================================================================================================================================
 
     RESUMO SLIDE 2
 
@@ -55,7 +55,7 @@ Prova 1:
         > Complexidade no densevolvido;
         > Alto custo no desenvolvimento de software (plataformas, software, firmware).
 
-===============================================================================================================================
+=============================================================================================================================================
 
     RESUMO SLIDE 3
 
@@ -80,11 +80,18 @@ Prova 1:
         > Os sinais que trafegam no barramento são: Dados, relógio, endereços e sinais de controle;
         > As informações que trafegam no barramento obedecem um protocolo;
         
-        > Classificação do Barramento
+        > Classificação do Barramento (Quanto à Funcionalidade)
             # Barramento de Dados (bidirecinal): fornecem o meio de transmissão de dados entre os módulos do sistema.
             # Barramento de endereços (unidirecional): usadas para designar fonte e destino dos dados do barramento de dados.
             # Barramento de controle (bidirecional): usadas para controlar o acesso e o uso de linhas de dados e endereços.
             # Barramento de controle (bidirecional): usadas para controlar o acesso e o uso de linhas de dados e endereços.
+        
+        > Classificação do Barramento (Quanto à Temporização)
+            # Barramento Assíncrono: O controle ocorre exclusivamente por meio de sinais trocados entre os dispositivos. 
+                                     Os ciclos de barramentos podem ter qualquer duração e não precisam ser iguais para todos as situações.
+            
+            # Barramento Síncrono: Este tipo de barramento exige que todo o tráfego de dados e controle seja sincronizado 
+                                   sob uma mesma base de tempo (clock). 
         
         > Vantagens:
             # Baixo custo na comunicação entre componentes;
@@ -101,11 +108,45 @@ Prova 1:
             # Bus request: Indica que um módulo pede controle do barramento do sistema;
             # Reset: Inicializa todos os módulos.
         
-        > 
+        > Caracteristicas de acesso
+            # Todo dispositivo de memória ou I/O deve ser exclusivo no acesso ao barramento.
 
-    +
+        > Dispositivos
+            # Master: dispositivos que controlam o protocolo de acesso ao barramento para leitura ou escrita de dados.
+            # Slave: dispositivos que simplesmente obedecem a requisição do master.
+            # Exemplo: "A CPU ordena que o controlador de disco leia ou escreva um bloco de dados."
 
+        > Arbitragem do Barramento
+            # Arbitragem Descentralizada: Quando foi ou mais dispositivos querem se tornar mestres do barramento ao mesmo tempo, 
+                                          pode existir uma inviabilidade de operações (caos) do sistema.
+
+            # Arbistragem Centralizada: Um arbitro decide qual mestre controla o barramento.
+
+        > Circuito de Reset
+            # Watchdog Timer: Inicializa o sistema ao ligar e/ou sub comando externo.
+        
+        > Memória de Programa
+            # Memória onde a CPU vai procurar as instruções a executar.
+        
+        > Memória de Dados
+            # Memória onde a CPU lê e escreve dados durante a operação normal.
+        
+        > Seleção de Endereços
+            # Lógica para escolher qual memória ou periférico a CPU vai utilizar.
+        
+        > Portas de I/O
+            # Dispositivos de entrada/saída (Input/Output) para comunicação com o mundo externo.
+  
 - Dispositivos e Circuitos Agregados aos Sistemas Microprocessados
-    +
-    +
+    + Buffers
+
+    + Latches
+    
+    + Drivers
+    
+    + Decodificador de Endereços
+    
+    + Memórias
+    
+    + Dispositivos de I/O
 
