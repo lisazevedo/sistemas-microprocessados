@@ -139,14 +139,27 @@ Prova 1:
   
 - Dispositivos e Circuitos Agregados aos Sistemas Microprocessados
     + Buffers
-
+        > Circuito destinado a compatibilização de sinais, em niveis e em velocidade, entre circuitos;
+        > Pode ser unidirecional ou bidirecinal.
+    
     + Latches
+        > Circuito também destinado à compatibilização de sinais, em nível e em velocidade (maioria dos casos), entre circuitos;
+        > Apenas unidirecional;
+        > Representa memória.
     
     + Drivers
+        > Circuito destinado à compatibilização de sinais, em nível e em velocidade;
+        > Usado para acionamento de sistemas analógicos de potência;
+        > Apenas unidirecional;
+        > Exemplo: "Circuitos para acionamento de motores de passo".
     
     + Decodificador de Endereços
-    
-    + Memórias
-    
-    + Dispositivos de I/O
+        > 
+        > 
 
+    + Memórias
+        > 
+        >
+        >
+
+    + Dispositivos de I/O
